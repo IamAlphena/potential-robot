@@ -206,6 +206,11 @@ html {
     font-size: 35px;
   }
   
+  .title{
+    text-align: center;
+    color: #eeebdd;
+  }
+
   /******
   Login/Register
   *****/

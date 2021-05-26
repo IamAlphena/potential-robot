@@ -55,6 +55,7 @@ class Register extends Component {
 
   return (
     <>
+    <h1 className="title"> Sign-Up to save your Favorites </h1>
     <Form.Field>
         <Form.Label>Name</Form.Label>
         <Form.Control>
