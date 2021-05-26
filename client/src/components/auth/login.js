@@ -95,7 +95,7 @@ if (nextProps.errors) {
         <Button.Group>
           <div className="btn">
             <Button fullwidth rounded color="link"
-            //  onClick={handleSubmit}
+             onClick={this.onSubmit}
             >
               Login
       </Button>
