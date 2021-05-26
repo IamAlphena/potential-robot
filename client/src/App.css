@@ -1,0 +1,227 @@
+/******
+Base Stlyes
+*****/
+html {
+    background: #1b1717;
+    background: -moz-linear-gradient(top,  #1b1717 0%, #151212 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1b1717 0%,#151212 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1b1717 0%,#151212  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1717', endColorstr='#151212',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+  }
+  
+  body {
+    background: #1b1717;
+    background: -moz-linear-gradient(top,  #1b1717 0%, #151212 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1b1717 0%,#151212 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1b1717 0%,#151212  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1717', endColorstr='#151212',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+    color: #eeebdd;
+  }
+  
+  /******
+  Header
+  *****/
+  
+  .header {
+    background-color: #ce1212;
+    width: 100%;
+  }
+  
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /******
+  Nav Bar
+  *****/
+  
+  #navbar {
+    text-align: right;
+    background-color: #ce1212;
+    color: #eeebdd;
+  }
+  
+  .navbar-item {
+    background-color: #ce1212;
+    color: #eeebdd;
+  }
+  
+  .collapse{
+    background-color: #ce1212;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .collapse :hover {
+    background-color: #810000;
+  }
+  
+  /******
+  Card Details
+  *****/
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    height: auto;
+    width: 150px;
+    margin: 15px;
+  }
+  
+  .card img {
+    height: 200px;
+    width: 150px;
+  }
+  
+  .card:hover {
+    opacity: 50%;
+  }
+  
+  
+  
+  /******
+  Form Styles
+  *****/
+  
+  form{
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 20%;
+  }
+  
+  .searchBar{
+    height: 40px;
+    width: 300px;
+  }
+  
+  /******
+  Details
+  *****/
+  
+  .details-container {
+    display: flex;
+  }
+  
+  .desc{
+    background-color: rgba(27, 23, 23,0.75);
+    width: 100%;
+    height: 225px;
+    text-align: center;
+  }
+  
+  .descTitle{
+    font-size: 45px;
+    opacity: 1;
+    text-align: center;
+  }
+  
+  .descDetails{
+    text-align: center;
+  }
+  
+  .release{
+    text-align: left;
+    padding: 40px;
+    margin-left: 20px;
+  }
+  
+  .flexspace {
+    display: flex;
+    padding-left: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .rating {
+    margin-left: 25%;
+  }
+  
+  .detailsCard {
+    max-height: 200px;
+    max-width: 150px;
+  }
+  
+  /******
+  Provider Render
+  *****/
+  
+  .whereToWatch {
+    background-color: rgba(27, 23, 23,0.75);
+    padding: 80px
+  }
+  
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .providerBox{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .option{
+    font-size: 30px;
+  }
+  
+  .providerList {
+    margin: 10px;
+  }
+  
+  /******
+  Footer
+  *****/
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 3px;
+    background-color: #1b1717;
+    opacity: 0.4;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  /******
+  Misc
+  *****/
+  .spacer{
+    height: 50px;
+  }
+  
+  .noResult{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+  }
+  
+  /******
+  Login/Register
+  *****/
+  
+  .label{
+    color:#eeebdd;
+  }
+  
+  .field{
+    margin: 25px;
+  }
+  
+  .btn{
+    width: 100%;
+    margin: 0 30px;
+  }
+  
+  
+  
