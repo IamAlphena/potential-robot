@@ -7,14 +7,19 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 
 import { Provider } from "react-redux";
 import store from "./store";
+import { StoreProvider } from "./utils/GlobalState";
 
 import Header from "./components/layout/header";
 import Navbar from "./components/layout/Navbar";
-import Landing from "./components/layout/Landing";
 import Register from "./components/auth/register";
 import Login from "./components/auth/login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import Footer from './components/Footer';
+import SearchPage from "./pages/searchpage";
+import MovieDetails from "./pages/detailpage";
+import MyList from "./pages/listpage";
+
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -37,19 +42,24 @@ if (localStorage.jwtToken) {
 
 function App() {
   return (
+    <StoreProvider>
     <Provider store={store}>
       <Router>
         <Header />
         <Navbar />
-
-        <Route exact path="/" component={Landing} />
+        <Route exact path="/" component={SearchPage} />
+        <Route exact path="/search" component={SearchPage} />
+        <Route path="/details/:id" component={MovieDetails} />
+        <Route path="/mylist" component={MyList} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
         </Switch>
+        <Footer />
       </Router>
     </Provider>
+    </StoreProvider>
   );
 }
 

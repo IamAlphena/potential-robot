@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Button, Icon } from "react-bulma-components";
+import { Form, Button } from "react-bulma-components";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -18,13 +18,13 @@ class Login extends Component {
   componentDidMount() {
     // If logged in and user navigates to Login page, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
+      this.props.history.push("/search");
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/dashboard"); // push user to dashboard when they login
+      this.props.history.push("/search"); // push user to dashboard when they login
     }
 if (nextProps.errors) {
       this.setState({
