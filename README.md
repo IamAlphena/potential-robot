@@ -39,4 +39,4 @@ https://docs.google.com/document/d/1aKxXPPxK8vvqaU2r37uaHOsqr2TuurPqoZz5__4PpaM/
 https://developers.themoviedb.org/3/movies/get-movie-watch-providers
 
 ## Link to Deployed App
-https://what-to-watch-hana.herokuapp.com/
+https://whattowatchhana.herokuapp.com/
