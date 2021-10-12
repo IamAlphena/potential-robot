@@ -13,6 +13,7 @@ function MovieDetails() {
     const [buy, setBuy] = useState("");
     const [rent, setRent] = useState("");
     const [flatrate, setFlatrate] = useState("");
+    const [ads, setAds] = useState("");
     const [state, dispatch] = useStoreContext()
 
     let { id } = useParams();
@@ -48,6 +49,8 @@ function MovieDetails() {
                 setFlatrate(showFlatrate)
                 const showRent = res.data.results.US ? res.data.results.US.rent : null
                 setRent(showRent)
+                const showAds = res.data.results.US ? res.data.results.US.ads : null
+                setAds(showAds)
             })
     }, [])
 
@@ -104,10 +107,24 @@ function MovieDetails() {
                                 key={flatrate.provider_id}
                                 image={flatrate.logo_path}
                                 provider={flatrate.provider_name}
-                            />
-                        )
+                                />  
+                                )
                     ))}
                 </div>
+                <div className="spacer"></div>
+
+<p className="option">With Ads</p>
+<div className="providerBox">
+    {!ads ? (<h2>Not Currently Available</h2>) : (ads.map(
+        ads => (
+            <WatchCard
+                key={ads.provider_id}
+                image={ads.logo_path}
+                provider={ads.provider_name}
+            />
+        )
+    ))}
+</div>
                 </div>
             </div>
         </div>
